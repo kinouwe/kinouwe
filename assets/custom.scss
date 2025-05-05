@@ -1,72 +1,90 @@
-.articles {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
+html {
+    font-size: 18px;
 
     @media (min-width: 1024px) {
-        grid-template-columns: repeat(2, 1fr);
+        html {
+            font-size: .95rem;
+        }
+    }
+}
+
+body {
+    main {
+        margin-top: 1rem;
     }
 
-    article.li {
+    .articles {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
 
-        height: 100%;
-
-        ::after {
-            content: none !important;
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
         }
 
-        .thumb {
+        article.li {
             height: auto;
-            aspect-ratio: 21 / 9;
-        }
+            margin: 0;
 
-        .title {
-            line-clamp: 2;
-            line-height: 1.5rem;
-            min-height: 3rem;
-        }
+            ::after {
+                content: none !important;
+            }
 
-        .summary {
+            .thumb {
+                height: auto;
+                aspect-ratio: 21 / 9;
+            }
+
+            .title {
+                line-clamp: 2;
+                line-height: 1.5rem;
+                min-height: 3rem;
+            }
+
+            .summary {
+                height: auto;
+                flex-grow: 1;
+                font-size: 85%;
+                line-height: 1.2rem;
+            }
+        }
+    }
+
+    .articles.sm {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+
+        .lism {
+            margin: 0;
+        }
+    }
+
+    div.article-body {
+        video {
+            object-fit: contain;
+            max-width: 100%;
             height: auto;
-            flex-grow: 1;
+            aspect-ratio: 16 / 9;
         }
     }
-}
 
-.articles.sm {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
-    
-    .lism {
-        margin: 0;
-    }
-}
+    article.sn {
+        .article-body {
+            font-size: .9rem;
 
-div.article-body {
-    video {
-        object-fit: contain;
-        max-width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
-}
+            p {
+                font-size: inherit;
+            }
 
-article.sn {
-    .article-body {
-        font-size: .9rem;
-
-        p {
-            font-size: inherit;
-        }
-
-        em {
-            color: Crimson;
+            em {
+                color: Crimson;
+            }
         }
     }
-}
 
-.l-footer {
-    margin-top: auto;
-    margin-bottom: 0;
+    .l-footer {
+        margin-top: auto;
+        margin-bottom: 0;
+    }
 }
