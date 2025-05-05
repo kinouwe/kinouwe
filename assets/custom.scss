@@ -1,22 +1,14 @@
 .articles {
-    .mrow {
-        display: flex;
-        flex-wrap: wrap;
-        gap: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 
-        .mcol {
-            flex: 0 0 100%; // ← スマホで全幅
-            box-sizing: border-box;
-            padding: 0;
-            margin: 16px;
-
-            @media (min-width: 1024px) {
-                flex: 0 0 calc(50% - 32px); // ← PCで2列分
-            }
-        }
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
     }
 
     article.li {
+
         height: 100%;
 
         ::after {
@@ -41,6 +33,15 @@
     }
 }
 
+.articles.sm {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    
+    .lism {
+        margin: 0;
+    }
+}
 
 div.article-body {
     video {
@@ -65,6 +66,7 @@ article.sn {
     }
 }
 
-.footer {
+.l-footer {
     margin-top: auto;
+    margin-bottom: 0;
 }

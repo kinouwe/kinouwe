@@ -8,13 +8,11 @@
 {{ end }}
 
 <div class="articles">
-  <div class="mrow">
 
     {{ $pctx := . }}
     {{ if .IsHome }}{{ $pctx = .Site }}{{ end }}
     {{ $paginator := .Paginate $pctx.RegularPages }}
     {{ range $paginator.Pages }}
-    <div class="mcol c6">
       <article class="li">
         <a href="{{ .Permalink }}">
           <div class="thumb thumb-{{ .File.UniqueID }}"></div>
@@ -37,10 +35,8 @@
           </div>
         </a>
       </article>
-    </div>
     {{ end }}
 
-  </div>
 </div>
 
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
