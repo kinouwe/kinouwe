@@ -15,8 +15,8 @@ description = "とあるTAのひとりごと"
 dateformat = "2006年01月02日" # Optional
 # Fonts settings.
 googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700" # Optional, Include google fonts.
-fontfamily = "'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Noto Sans', 'メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;"
-logofontfamily = "Lobster, cursive" # Optional, Override logo font.
+# fontfamily = "'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Noto Sans JP', 'メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;"
+# logofontfamily = "Lobster, cursive" # Optional, Override logo font.
 
 enableHighlight = true # highlight.js option
 
