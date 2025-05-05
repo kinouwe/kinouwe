@@ -5,6 +5,9 @@ title = '【配布】uwe_overlap_uv'
 tags = ['Maya', 'Python', '配布']
 +++
 
+▼ダウンロードはこちら  
+https://github.com/kinouwe/uwe-maya/blob/main/python/uv/uwe_overlap_uv.py
+
 とりあえずpython3環境にのみ対応しています。  
 Python2環境も必要という念を感じたら用意するかも。
 
