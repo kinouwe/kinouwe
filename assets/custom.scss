@@ -1,0 +1,36 @@
+article.li {
+    height: auto;
+
+    ::after {
+        content: none !important;
+    }
+
+    .thumb {
+        height: auto;
+        aspect-ratio: 21 / 9;
+    }
+    .summary {
+        height: auto;
+    }
+}
+
+div.article-body {
+    video {
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+article.sn  {
+    .article-body {
+        font-size: .9rem;
+        p {
+            font-size: inherit;
+        }
+        em {
+            color: Crimson;
+        }
+    }
+}

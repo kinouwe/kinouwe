@@ -1,0 +1,37 @@
+baseurl = "https://inouwe.com/"
+title = "inouwe.com"
+theme = "hugo_theme_robust"
+languageCode = 'ja-jp'
+hasCJKLanguage = true
+
+[services]
+  [services.disqus]
+    shortname = ''
+  [services.googleAnalytics]
+    id = 'UA-XXXXXXXX-XX' # Optical
+
+[params]
+description = "とあるTAのひとりごと"
+dateformat = "2006年01月02日" # Optional
+# Fonts settings.
+googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700" # Optional, Include google fonts.
+fontfamily = "'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Noto Sans', 'メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;"
+logofontfamily = "Lobster, cursive" # Optional, Override logo font.
+
+enableHighlight = true # highlight.js option
+
+[params.author]
+thumbnail = "https://i.gyazo.com/thumb/240/c00b46fe8783e069dcad781f48c9973b-jpg.jpg"
+name = "Kanon Inoue"
+description = "<p>2018年からゲーム業界で働いています。キャラクターアーティスト→セットアップアーティスト→テクニカルアーティストの進化経路です。</p><p>参加タイトルはシノビストライカー、ニンジャラ、ヴァルキリーエリュシオンなど。</p>"
+#facebook = "https://www.facebook.com/daisuke.tsuji.735"
+#twitter = "https://twitter.com/dim0627"
+github = "https://github.com/kinouwe"
+
+[outputs]
+page = [ "HTML", "AMP" ] # if you want AMP enable.
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
