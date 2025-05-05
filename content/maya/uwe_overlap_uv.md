@@ -5,6 +5,9 @@ title = '【配布】uwe_overlap_uv'
 tags = ['Maya', 'Python', '配布']
 +++
 
+## ナニコレ？
+UV頂点を、一番近くのUV頂点にスナップするスクリプトです。
+
 ▼ダウンロードはこちら  
 https://github.com/kinouwe/uwe-maya/blob/main/python/uv/uwe_overlap_uv.py
 
