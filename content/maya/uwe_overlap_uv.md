@@ -9,7 +9,7 @@ tags = ['Maya', 'Python', '配布']
 UV頂点を、一番近くのUV頂点にスナップするスクリプトです。
 
 ▼ダウンロードはこちら  
-https://github.com/kinouwe/uwe-maya/blob/main/python/uv/uwe_overlap_uv.py
+[uwe_overlap_uv.py](https://github.com/kinouwe/uwe-maya/blob/main/python/uv/uwe_overlap_uv.py)
 
 とりあえずpython3環境にのみ対応しています。  
 Python2環境も必要という念を感じたら用意するかも。
