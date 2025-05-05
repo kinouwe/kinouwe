@@ -1,18 +1,46 @@
-article.li {
-    height: auto;
+.articles {
+    .mrow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: none;
 
-    ::after {
-        content: none !important;
+        .mcol {
+            flex: 0 0 100%; // ← スマホで全幅
+            box-sizing: border-box;
+            padding: 0;
+            margin: 16px;
+
+            @media (min-width: 1024px) {
+                flex: 0 0 calc(50% - 32px); // ← PCで2列分
+            }
+        }
     }
 
-    .thumb {
-        height: auto;
-        aspect-ratio: 21 / 9;
-    }
-    .summary {
-        height: auto;
+    article.li {
+        height: 100%;
+
+        ::after {
+            content: none !important;
+        }
+
+        .thumb {
+            height: auto;
+            aspect-ratio: 21 / 9;
+        }
+
+        .title {
+            line-clamp: 2;
+            line-height: 1.5rem;
+            min-height: 3rem;
+        }
+
+        .summary {
+            height: auto;
+            flex-grow: 1;
+        }
     }
 }
+
 
 div.article-body {
     video {
@@ -23,14 +51,20 @@ div.article-body {
     }
 }
 
-article.sn  {
+article.sn {
     .article-body {
         font-size: .9rem;
+
         p {
             font-size: inherit;
         }
+
         em {
             color: Crimson;
         }
     }
+}
+
+.footer {
+    margin-top: auto;
 }
