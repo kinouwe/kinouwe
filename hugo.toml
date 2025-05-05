@@ -1,4 +1,4 @@
-baseurl = "https://inouwe.com/"
+baseurl = "https://www.inouwe.com/"
 title = "inouwe.com"
 theme = "hugo_theme_robust"
 languageCode = 'ja-jp'
