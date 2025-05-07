@@ -23,7 +23,7 @@ enableHighlight = true # highlight.js option
 [params.author]
 thumbnail = "https://i.gyazo.com/thumb/240/c00b46fe8783e069dcad781f48c9973b-jpg.jpg"
 name = "Kanon Inoue"
-description = "<p>2018年からゲーム業界で働いています。キャラクターアーティスト→セットアップアーティスト→テクニカルアーティストの進化経路です。</p><p>参加タイトルはシノビストライカー、ニンジャラ、ヴァルキリーエリュシオンなど。</p>"
+description = "<p>2018年からゲーム業界で働いています。キャラクターアーティスト→セットアップアーティスト→テクニカルアーティストの進化経路です。ちなみにENTJ-A。</p><p>参加タイトルはシノビストライカー、ニンジャラ、ヴァルキリーエリュシオンなど。</p>"
 #facebook = "https://www.facebook.com/daisuke.tsuji.735"
 #twitter = "https://twitter.com/dim0627"
 github = "https://github.com/kinouwe"
