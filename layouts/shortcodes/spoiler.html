@@ -1,0 +1,32 @@
+<div class="spoiler-container">
+  <button class="spoiler-toggle" onclick="toggleSpoiler(this)">
+    {{ with .Get "title" }}{{ . }}{{ else }}ネタバレを見る{{ end }}
+  </button>
+  <div class="spoiler-content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>
+
+<script>
+  function toggleSpoiler(button) {
+    const content = button.nextElementSibling;
+
+    if (content.classList.contains("open")) {
+      // 閉じる
+      content.style.maxHeight = content.scrollHeight + "px"; // 一旦セット（これ重要）
+      content.offsetHeight; // 強制リフローでトランジションを適用
+      content.style.maxHeight = "0";
+      content.classList.remove("open");
+    } else {
+      // 開く
+      content.classList.add("open");
+      content.style.maxHeight = content.scrollHeight + "px";
+
+      // トランジション後にmax-heightを解除して自然な高さに（必要なら）
+      content.addEventListener("transitionend", function handler() {
+        content.style.maxHeight = "none";
+        content.removeEventListener("transitionend", handler);
+      });
+    }
+  }
+</script>

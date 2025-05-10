@@ -65,6 +65,11 @@ body {
             height: auto;
             aspect-ratio: 16 / 9;
         }
+
+        a:not(:has(img)) {
+            font-weight: bold;
+            border-bottom: dashed 1px #2196f3;
+        }
     }
 
     article.sn {
@@ -76,7 +81,8 @@ body {
             }
 
             em {
-                color: Crimson;
+                color: inherit;
+                background: linear-gradient(transparent 70%, rgba(255, 122, 122, 0.3) 30%);
             }
         }
     }
@@ -84,5 +90,38 @@ body {
     .l-footer {
         margin-top: auto;
         margin-bottom: 0;
+    }
+}
+
+.spoiler-container {
+    margin: 1em 0;
+    font-family: inherit;
+
+    .spoiler-toggle {
+        display: block;
+        background-color: #2196f3;
+        color: white;
+        padding: 0.5em 1em;
+        margin-bottom: 0;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+        border-radius: 2px;
+        width: 100%;
+    }
+
+    .spoiler-content {
+        overflow: hidden;
+        max-height: 0;
+        padding: 0 1em;
+        background-color: #eee;
+        border-left: 4px solid #80bff1;
+        border-radius: 2px;
+        transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .spoiler-content.open {
+        /* padding は JavaScript側で制御しないので、固定でもOK */
+        padding: 0.5em 1em;
     }
 }
