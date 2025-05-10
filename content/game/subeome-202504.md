@@ -1,14 +1,14 @@
 +++
-date = '2025-05-06T11:26:50+09:00'
-draft = true
-title = 'すべおめ 2025-05'
+date = '2025-04-30T23:00:00+09:00'
+draft = false
+title = '2025年4月のすべおめ'
 thumbnail = "https://i.gyazo.com/9403cd1ef14bbec2b4b16d41d27fb3f3.png"
 +++
 
 すべおめとは。  
 [日本実績協会](https://steamcommunity.com/groups/jisseki)が提案する、トロコンSteam版の言い方。
 
-2025年5月のすべおめ達成タイトルをレビューしていきます。
+2025年4月のすべおめ達成タイトルをレビューしていきます。
 
 ## Rusty's Retirement
 
