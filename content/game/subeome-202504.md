@@ -3,6 +3,7 @@ date = '2025-04-30T23:00:00+09:00'
 draft = false
 title = '2025年4月のすべおめ'
 thumbnail = "https://i.gyazo.com/9403cd1ef14bbec2b4b16d41d27fb3f3.png"
+tags = ["Steam", "すべおめ"]
 +++
 
 すべおめとは。  

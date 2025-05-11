@@ -2,7 +2,7 @@
 date = '2025-04-04T18:00:00+09:00'
 draft = false
 title = '【配布】uwe_overlap_uv'
-tags = ['Maya', 'Python', '配布']
+tags = ['Maya', '配布']
 +++
 
 ## ナニコレ？
