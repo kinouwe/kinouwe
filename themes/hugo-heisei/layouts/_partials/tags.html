@@ -1,12 +1,14 @@
 <div class="sidebar-item tag-cloud">
-  <h2 class="sidebar-title">Tags</h2>
-  <ul>
-    {{ range $tag, $pages := site.Taxonomies.tags }}
-      <li>
-        <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}">
-          {{ $tag }}<span class="tag-count">({{ len $pages }})</span>
-        </a>
-      </li>
-    {{ end }}
-  </ul>
+    <h2 class="sidebar-title">Tags</h2>
+    <div class="sidebar-content">
+        <ul>
+            {{ range $tag, $pages := site.Taxonomies.tags }}
+            <li>
+                <a href="{{ " /tags/" | relLangURL }}{{ $tag | urlize }}">
+                    {{ $tag }}<span class="tag-count">({{ len $pages }})</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
 </div>

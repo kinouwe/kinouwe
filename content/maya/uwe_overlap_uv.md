@@ -19,9 +19,9 @@ Python2環境も必要という念を感じたら用意するかも。
 
 Pythonモードでスクリプトエディタに以下を入力して実行してください。
 ```python
- import uwe_overlap_uv
- uwe_overlap_uv.gui()
- ```
+import uwe_overlap_uv
+uwe_overlap_uv.gui()
+```
 シェルフに登録するのもコレ↑でOK
 
 
