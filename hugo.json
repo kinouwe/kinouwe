@@ -1,0 +1,21 @@
+{
+  "baseURL": "https://www.inouwe.com/",
+  "languageCode": "ja-jp",
+  "title": "inouwe.com",
+  "theme": "hugo-heisei",
+   "pagination": {
+      "disableAliases": false,
+      "pagerSize": 10,
+      "path": "page"
+   },
+  "params": {
+    "description": "懐かしの平成ブログテーマ"
+  },
+  "markup": {
+    "goldmark": {
+      "renderer": {
+        "unsafe": true
+      }
+    }
+  }
+}

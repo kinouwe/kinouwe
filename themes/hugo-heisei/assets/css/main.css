@@ -1,0 +1,469 @@
+:host(:not([data-theme=dark])),
+:root:not([data-theme=dark]),
+[data-theme=light] {
+  --pico-primary: #0085f1;
+  --pico-primary-background: #ececec;
+  --pico-primary-hover: #55b2ff;
+  --pico-primary-hover-background: var(--pico-primary-hover);
+  --pico-secondary: #96c8f1;
+  --pico-secondary-background: #fff;
+  --pico-font-family-sans-serif: "YJTop Ellipsis", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  --border-bottom: solid 2px var(--pico-form-element-border-color);
+}
+
+input:not([type=checkbox],[type=radio],[type=range],[type=file])[type=search] {
+  background-image: none;
+}
+
+/*==============================================
+
+  header.html
+
+================================================*/
+.baseurl {
+  text-decoration: none;
+}
+
+/*==============================================
+
+  baseof.html
+
+================================================*/
+body {
+  font-family: var(--pico-font-family-sans-serif);
+  background-color: var(--pico-primary-background);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* ←ここが重要 */
+}
+
+.container {
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  margin: 3em auto;
+}
+
+header h1 {
+  font-size: 150%;
+  margin: 0;
+}
+
+main {
+  background-color: var(--pico-secondary-background);
+  padding: 2em .5em;
+  margin-bottom: 3em;
+}
+
+.content-list {
+  margin-bottom: 1.5em;
+}
+
+.content-list a {
+  display: inline-block;
+  color: var(--pico-primary);
+  text-decoration: none;
+}
+
+.content-list time {
+  display: block;
+  font-size: 90%;
+  margin-bottom: .25em;
+}
+
+.content-list h2 {
+  font-size: 120%;
+  font-weight: bold;
+  color: var(--pico-primary);
+  margin: 0;
+}
+
+.tag-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.tag-list li {
+  list-style: none;
+  margin-right: .5em;
+}
+
+.tag-list li a {
+  color: var(--pico-color);
+  font-size: 62%;
+  background-color: var(--pico-primary-background);
+  text-decoration: none;
+  padding: .2em .5em;
+}
+
+ul.tag-list li a::before {
+  content: "#";
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+footer {
+  font-size: 70%;
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 3em;
+}
+
+/*===== PC Viewport =====*/
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding-right: var(--pico-spacing);
+    padding-left: var(--pico-spacing);
+  }
+
+  main {
+    width: 100%;
+    padding: 2em;
+  }
+
+  aside {
+    width: 360px;
+    margin-left: 2em;
+  }
+
+  .single-content {
+    font-size: 82%;
+  }
+}
+
+/*==============================================
+
+  terms.html
+
+================================================*/
+.terms {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.terms .term {
+  font-size: 80%;
+  margin-right: .25em;
+}
+
+/*==============================================
+
+  single.html
+
+================================================*/
+.single-meta {
+  border-bottom: var(--border-bottom);
+  margin-bottom: 3em;
+  padding-bottom: 1em;
+}
+
+.single-meta h1 {
+  font-size: 160%;
+  margin-bottom: .25em;
+}
+
+.single-meta time {
+  font-size: 80%;
+  display: block;
+}
+
+.single-content {
+  font-size: 96%;
+}
+
+.single-content h2 {
+  font-size: 140%;
+  border-bottom: var(--border-bottom);
+  padding-bottom: .25em;
+}
+
+iframe {
+  max-width: 100%;
+  margin: 1em 0;
+}
+
+code,
+kbd,
+samp {
+  padding: .1em .25em;
+  margin: 0 .1em;
+}
+/*===== PC Viewport =====*/
+@media (min-width: 1024px) {
+  .single-content {
+    font-size: 80%;
+  }
+}
+
+
+/*==============================================
+
+  Pagination Settings
+
+================================================*/
+.pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  margin-top: 4em;
+}
+
+.pagination:not(:has(*)) {
+  /* 子要素が全くない .pagination に適用される */
+  display: none;
+}
+
+.single-pagination {
+  flex: 1;
+}
+
+.single-pagination a {
+  display: block;
+  padding: 0.5em 1em;
+  color: var(--pico-primary);
+  font-size: 80%;
+  border: solid 1px var(--pico-secondary);
+  text-decoration: none;
+}
+
+.single-pagination.next {
+  text-align: left;
+}
+
+.single-pagination.prev {
+  text-align: right;
+}
+
+/*===== PC Viewport =====*/
+@media (min-width: 1024px) {
+  .pagination {
+    flex-direction: row;
+  }
+}
+
+
+/*==============================================
+
+  Sidebar Settings
+
+================================================*/
+.sidebar-item {
+  border: var(--pico-primary) solid 1px;
+  background-color: var(--pico-secondary-background);
+  margin-bottom: 2em;
+}
+
+.sidebar-item .sidebar-title {
+  background-color: var(--pico-primary);
+  color: var(--pico-primary-background);
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  font-size: 80%;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*===== PC Viewport =====*/
+@media (min-width: 1024px) {
+  .sidebar-item .sidebar-title {
+    font-size: 80%;
+  }
+}
+
+/*==============================================
+
+  profile.html
+
+================================================*/
+.profile img {
+  display: block;
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.profile-desc {
+  margin: .25em .64em;
+}
+
+.profile-desc .author {
+  display: block;
+  text-align: center;
+  margin-bottom: .64em;
+}
+
+.profile .bio p {
+  font-size: 80%;
+}
+
+/*===== PC Viewport =====*/
+@media (min-width: 1024px) {
+  .profile .author {
+    font-size: 80%;
+  }
+  .profile .bio p {
+    font-size: 65%;
+  }
+}
+
+/*==============================================
+
+  tags.html
+
+================================================*/
+.tag-cloud ul {
+  display: flex;
+  gap: .25em;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  margin: .64em;
+}
+
+.tag-cloud ul li {
+  list-style: none;
+  font-size: 90%;
+  padding: 0;
+  margin: 0;
+}
+
+.tag-cloud span {
+  color: var(--pico-secondary);
+  margin-left: .1em;
+}
+
+/*===== PC Viewport =====*/
+@media (min-width: 1024px) {
+  .tag-cloud ul li {
+    font-size:70%;
+  }
+}
+
+
+/*==============================================
+
+  spoiler.html
+
+================================================*/
+.spoiler-container {
+  margin: 1em 0;
+  font-family: inherit;
+}
+
+.spoiler-container .spoiler-toggle {
+  display: block;
+  background-color: var(--pico-primary);
+  color: var(--pico-primary-background);
+  padding: 0.5em 1em;
+  margin-bottom: 0;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+}
+
+.spoiler-container .spoiler-content {
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 1em;
+  background-color: var(--pico-primary-background);
+  border-left: 4px solid var(--pico-secondary);
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.spoiler-container .spoiler-content.open {
+  padding: 0.5em 1em;
+}
+
+
+/*==============================================
+
+  search.html
+
+================================================*/
+/* Custom styles for the search page */
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form input::-webkit-input-placeholder {
+  color: var(--pico-secondary);
+}
+
+.search-form #result {
+  margin: 2em 0;
+}
+
+.search-form .item {
+  margin-bottom: 1.65em;
+}
+
+.search-form .item:last-child {
+  margin-bottom: 0;
+}
+
+.search-form .item_title {
+  text-decoration: none;
+  color: #2196f3;
+  font-weight: bolder;
+}
+
+.search-form a.item_title {
+  border-bottom: none !important;
+}
+
+.search-form .item_excerpt {
+  background: white;
+  margin: 0.5em 0;
+  margin-left: 1em;
+  padding: 0.5em;
+  border: dashed 1px lightgray;
+  font-size: smaller;
+}
+
+.search-form .item_excerpt b {
+  background: #ffe7a3;
+}
+
+input#searchKeyword {
+  color: #333;
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: bolder;
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input#searchKeyword::placeholder {
+  color: var(--pico-secondary);
+  font-size: 80%;
+  letter-spacing: 1px; /* 少し広め */
+}
+
+input#searchButton {
+  display: none;
+}

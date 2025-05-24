@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ .Content }}
+
+{{ $paginator := .Paginate site.RegularPages }}
+
+{{ range $paginator.Pages }}
+  <div class="content-list">
+    <a href="{{ .RelPermalink }}">
+      <time>{{ .Date.Format "2006-01-02" }}</time>
+      <h2>{{ .LinkTitle }}</h2>
+    </a>
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  </div>
+{{ end }}
+
+<nav class="pagination">
+  {{ if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}">← Prev</a>
+  {{ end }}
+  {{ if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL }}">Next →</a>
+  {{ end }}
+</nav>
+{{ end }}
