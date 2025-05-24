@@ -1,6 +1,7 @@
 :host(:not([data-theme=dark])),
 :root:not([data-theme=dark]),
 [data-theme=light] {
+  --pico-color: #444;
   --pico-primary: #0085f1;
   --pico-primary-background: #ececec;
   --pico-primary-hover: #55b2ff;
@@ -11,7 +12,7 @@
   --border-bottom: solid 2px var(--pico-form-element-border-color);
 }
 
-input:not([type=checkbox],[type=radio],[type=range],[type=file])[type=search] {
+input:not([type=checkbox], [type=radio], [type=range], [type=file])[type=search] {
   background-image: none;
 }
 
@@ -204,10 +205,11 @@ samp {
   padding: .1em .25em;
   margin: 0 .1em;
 }
+
 /*===== PC Viewport =====*/
 @media (min-width: 1024px) {
   .single-content {
-    font-size: 80%;
+    font-size: 76%;
   }
 }
 
@@ -275,15 +277,14 @@ samp {
 .sidebar-item .sidebar-title {
   color: var(--pico-primary);
   padding: 0.5em 1em;
-  margin-bottom: 1em;
   font-size: 80%;
   font-weight: bold;
-  border-left: solid 36px var(--pico-secondary);
+  border-left: solid 24px var(--pico-secondary);
   border-bottom: dashed 1px var(--pico-secondary);
 }
 
 .sidebar-content {
-  margin: .5em;
+  margin: 1em;
 }
 
 /*===== PC Viewport =====*/
@@ -291,6 +292,7 @@ samp {
   .sidebar-item {
     width: 320px;
   }
+
   .sidebar-item .sidebar-title {
     font-size: 80%;
   }
@@ -310,7 +312,7 @@ samp {
 }
 
 .profile-desc {
-  margin: .25em .64em;
+  margin: .25em auto;
 }
 
 .profile-desc .author {
@@ -323,11 +325,17 @@ samp {
   font-size: 80%;
 }
 
+.profile .bio p:last-of-type {
+  margin-bottom: 0;
+}
+
+
 /*===== PC Viewport =====*/
 @media (min-width: 1024px) {
   .profile .author {
     font-size: 80%;
   }
+
   .profile .bio p {
     font-size: 65%;
   }
@@ -347,7 +355,7 @@ samp {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0;
-  margin: .64em;
+  margin: 0;
 }
 
 .tag-cloud ul li {
@@ -355,6 +363,10 @@ samp {
   font-size: 90%;
   padding: 0;
   margin: 0;
+}
+
+.tag-cloud ul li a {
+  text-decoration: none;
 }
 
 .tag-cloud span {
@@ -365,7 +377,7 @@ samp {
 /*===== PC Viewport =====*/
 @media (min-width: 1024px) {
   .tag-cloud ul li {
-    font-size:70%;
+    font-size: 70%;
   }
 }
 
@@ -472,7 +484,8 @@ input#searchKeyword {
 input#searchKeyword::placeholder {
   color: var(--pico-secondary);
   font-size: 80%;
-  letter-spacing: 1px; /* 少し広め */
+  letter-spacing: 1px;
+  /* 少し広め */
 }
 
 input#searchButton {

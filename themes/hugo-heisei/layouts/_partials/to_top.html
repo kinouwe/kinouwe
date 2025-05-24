@@ -1,0 +1,35 @@
+<a href="#top" class="fixed-top-link" id="topLink">Top</a>
+
+<style>
+    .fixed-top-link {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        color: var(--pico-primary);
+        text-decoration: none;
+        font-size: 80%;
+        font-weight: normal;
+        background: none;
+        padding: 0;
+        border: none;
+        z-index: 9999;
+        cursor: pointer;
+        scroll-behavior: smooth;
+        transition: opacity 0.3s ease;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const topLink = document.getElementById("topLink");
+        topLink.style.display = "none";
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 400) {
+                topLink.style.display = "block";
+            } else {
+                topLink.style.display = "none";
+            }
+        });
+    });
+</script>

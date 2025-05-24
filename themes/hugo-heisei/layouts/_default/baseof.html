@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}" data-theme="light">
 
 <head>
   {{ partial "head.html" . }}
 </head>
 
-<body>
+<body id="top">
   <div class="wrapper">
     <header>
       {{ partial "header.html" . }}
@@ -21,6 +21,7 @@
     <footer>
       {{ partial "footer.html" . }}
     </footer>
+    {{ partial "to_top.html" . }}
   </div>
 </body>
 
