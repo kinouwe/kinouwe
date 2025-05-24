@@ -4,7 +4,7 @@
         <ul>
             {{ range $tag, $pages := site.Taxonomies.tags }}
             <li>
-                <a href="{{ " /tags/" | relLangURL }}{{ $tag | urlize }}">
+                <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}">
                     {{ $tag }}<span class="tag-count">({{ len $pages }})</span>
                 </a>
             </li>
