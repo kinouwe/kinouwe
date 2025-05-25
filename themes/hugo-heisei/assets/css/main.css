@@ -194,6 +194,20 @@ footer {
   padding-bottom: .25em;
 }
 
+.single-content h2:nth-child(1) {
+  margin-top: .5em;
+}
+
+.single-content h3 {
+  font-size: 130%;
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+}
+
+.single-content h3:nth-child(1) {
+  margin-top: .5em;
+}
+
 iframe {
   max-width: 100%;
   margin: 1em 0;
