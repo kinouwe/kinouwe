@@ -1,6 +1,6 @@
 {
   "date": "2025-05-25T17:00:00+09:00",
-  "draft": false,
+  "draft": true,
   "title": "2025年5月のすべおめ",
   "thumbnail": "https://i.gyazo.com/thumb/240/12c1ed5e3d816f68a061f6096f0120ea.jpg",
   "tags": ["Steam", "すべおめ"]
