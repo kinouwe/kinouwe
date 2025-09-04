@@ -1,6 +1,6 @@
 +++
 date = '2025-04-23T20:00:00+09:00'
-draft = false
+draft = true
 title = 'トポロジをアナトミーに合わせるかどうか'
 tags = ['3DCG']
 +++
