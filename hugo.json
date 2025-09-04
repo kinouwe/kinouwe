@@ -1,7 +1,7 @@
 {
-  "baseURL": "https://www.inouwe.com/",
+  "baseURL": "https://kinouwe.github.io/",
   "languageCode": "ja-jp",
-  "title": "inouwe.com",
+  "title": "kinouwe",
   "theme": "hugo-heisei",
    "pagination": {
       "disableAliases": false,
